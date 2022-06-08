@@ -1,9 +1,21 @@
-#include<stdio.h>
-/** this program is going to print _putchar on the screen
- * this code uses betty style
+#include "main.h"
+/**
+ * main -> prints _putchar in this function
+ * 
+ * Return: always returns 0
  */
 int main(void)
 {
-	print("\n_putchar\n");
-	return(0);
+	_putchar('_');
+	_putchar('p');
+	_putchar('u');
+	_putchar('t');
+	_putchar('c');
+	_putchar('h');
+	_putchar('a');
+	_putchar('r');
+	_putchar('\n');
+
+	return (0);
+
 }
