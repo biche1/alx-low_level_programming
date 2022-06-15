@@ -1,6 +1,8 @@
 #include "main.h"
 #include <stdio.h>
 #include <string.h>
+
+#define DEST_SIZE 40
 /**
  * main - check the code
  *
@@ -8,10 +10,11 @@
  */
 int main(void)
 {
-	char destination[] = "Good ";
-	char source[] = "Morning!";
+	char src[] = "World Here";
+	char dest[DEST_SIZE] = "Hello";
 
-	strcat(destination, source);
-	printf("Concatenated String: %s\n", destination);
+	strncat(dest, src, 5);
+	printf(dest);
+
 	return (0);
 }
