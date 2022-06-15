@@ -1,5 +1,6 @@
 #include "main.h"
 #include <stdio.h>
+#include <string.h>
 /**
  * main - check the code
  *
@@ -7,15 +8,10 @@
  */
 int main(void)
 {
-	char s1[15] = "Good";
-	char s2[20] = "Morning\n";
-	char *p;
+	char destination[] = "Good ";
+	char source[] = "Morning!";
 
-	printf("%s\n", s1);
-	printf("%s\n", s2);
-	p = _strcat(s1, s2);
-	printf("%s", s1);
-	printf("%s", s2);
-	printf("%s", ptr);
+	strcat(destination, source);
+	printf("Concatenated String: %s\n", destination);
 	return (0);
 }
