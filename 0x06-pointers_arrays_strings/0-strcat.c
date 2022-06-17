@@ -1,18 +1,33 @@
 #include "main.h"
-#include <string.h>
+
 /**
- * main - check the code
- *
- * Return: Always 0.
+ * *_strcat - function commute strings
+ * @dest: param pointer to a char
+ * @src: param pointer to a char
+ * Return: return value of dest
  */
-int main(void)
+
+char *_strcat(char *dest, char *src)
 {
-	char src[] = "World Here";
-	char dest[DEST_SIZE] = "Hello";
+	int i;
+	int j;
 
-	strncat(dest, src, 3);
-	char *d;
+	i = 0;
+	j = 0;
 
-	d = dest;
-	_putchar(d);
+	while (dest[i] != '\0')
+	{
+		i++;
+	}
+
+	while (src[j] != '\0')
+	{
+		dest[i] = src[j];
+		j++;
+		i++;
+
+	}
+
+	dest[i] = '\0';
+	return (dest);
 }
