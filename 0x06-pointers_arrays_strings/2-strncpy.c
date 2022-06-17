@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _strcpy - two words
+ * _strncpy - two words
  * @dest : pointer to char params
  * @src : pointer to char params
  * @n : int params
@@ -20,6 +20,8 @@ char *_strncpy(char *dest, char *src, int n)
 	for ( ; i < n; i++)
 	{
 		dest[i] = '\0';
+
 	}
+
 	return (dest);
 }
