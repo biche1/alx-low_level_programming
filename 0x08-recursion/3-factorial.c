@@ -1,10 +1,10 @@
 #include "main.h"
 /**
- * factorial: function to find factorial
+ * factorial - returns factorial of a given number
  * @n: number to find factorial of
  *
- * Return : factorial of number
- * -1 if n < 0.
+ * Return: factorial of number
+ * -1 if n < 0
  */
 int factorial(int n)
 {
