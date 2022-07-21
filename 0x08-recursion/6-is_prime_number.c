@@ -16,11 +16,14 @@ int helperFunction(int num, int i)
 		{
 			return (0);
 		}
-	}
-	else
-	{
-		return (1);
-	}
+		else
+		{
+			return (helperFunction(num, i + 1));
+		}
+}
+else
+{
+	return (i);
 }
 
 /**
